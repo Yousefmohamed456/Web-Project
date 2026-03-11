@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chango&family=Coiny&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
+      rel="stylesheet"
+    />
+    <title>Edit Book</title>
+  </head>
+  <body>
+    <header>
+      <!-- <img src="images/main logo.png" alt="Online Library Portal logo" /> -->
+      <a href="home.html">Log Out</a>
+      <nav>
+        <ul>
+          <li><a href="admin dashboard.html">My Dashboard</a></li>
+          <li><a href="add books.html">Add New Book</a></li>
+          <li><a href="availableBooks.html">View Available Books</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Edit Book</h1>
+      <p>Update the details of the selected book below.</p>
+
+      <form action="#">
+        <div>
+          <label for="book_id">Book ID</label>
+          <input
+            type="text"
+            id="book_id"
+            name="book_id"
+            placeholder="Book ID"
+            required
+            readonly
+          />
+        </div>
+
+        <div>
+          <label for="book_name">Book Name</label>
+          <input
+            type="text"
+            id="book_name"
+            name="book_name"
+            placeholder="Book Name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="book_author">Book Author</label>
+          <input
+            type="text"
+            id="book_author"
+            name="book_author"
+            placeholder="Book Author"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="category">Category</label>
+          <select name="category" id="category" required>
+            <option value="">Select a category</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Science">Science</option>
+            <option value="Technology">Technology</option>
+            <option value="History">History</option>
+            <option value="Programming">Programming</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Fantasy">Fantasy</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="description">Description</label>
+          <textarea
+            name="description"
+            id="description"
+            rows="5"
+            cols="15"
+            required
+          ></textarea>
+        </div>
+
+        <fieldset>
+          <legend>Availability</legend>
+
+          <label for="available">Available</label>
+          <input
+            type="radio"
+            id="available"
+            name="status"
+            value="available"
+            checked
+          />
+
+          <label for="unavailable">Unavailable</label>
+          <input
+            type="radio"
+            id="unavailable"
+            name="status"
+            value="unavailable"
+          />
+        </fieldset>
+
+        <button type="submit" formaction="availableBooks.html">Save Changes</button>
+        <button type="reset">Reset</button>
+        <a href="availableBooks.html">Cancel</a>
+      </form>
+
+      <hr />
+
+      <section>
+        <h2>Delete Book</h2>
+        <p>Deleting this book is permanent and cannot be undone.</p>
+        <form action="availableBooks.html">
+          <button type="submit">Delete Book</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_content">
+        <!-- <img src="images/main logo.png" alt="Online Library Portal logo" /> -->
+        <p id="desc_1">Online Library Portal</p>
+        <div id="desc_2">
+          <p>
+            Online Library Portal is the world's largest library catalog,
+            helping you find library materials online.
+          </p>
+          <small> Copyright © 2001-2026 OCLC. All rights reserved.</small>
+          <p>
+            © 2026 OCLC Domestic and international trademarks and/or service
+            marks of OCLC, Inc. and its affiliates.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
