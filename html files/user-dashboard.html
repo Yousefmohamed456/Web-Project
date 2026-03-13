@@ -19,7 +19,7 @@
         <ul>
           <li><a href="user-dashboard.html">Dashboard</a></li>
           <li><a href="#">Browse Books</a></li>
-          <li><a href="List of Borrowed Books.html">My Borrowed Books</a></li>
+          <li><a href="list-of-borrowed-books.html">My Borrowed Books</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Support</a></li>
         </ul>
@@ -42,12 +42,30 @@
 
         <h3>My Borrowed Books</h3>
         <p>View books that you have borrowed.</p>
-        <a href="List of Borrowed Books.html">View My Books</a>
+        <a href="list-of-borrowed-books.html">View My Books</a>
       </section>
+
       <div class="search">
-            <label>search</label>
-            <input type="search">
+
+      <section>
+     <h2>Search Books</h2>
+
+  <form action="user-available-books.html">
+    <label for="search">Search by title, author, or category</label>
+
+    <input
+      type="text"
+      id="search"
+      name="search"
+      placeholder="Search books..."
+      required
+    />
+    <button type="submit">Search</button>
+  </form>
+</section>
+
       </div>
+
       <section>
         <h2>My Borrowed Books</h2>
         
@@ -58,7 +76,7 @@
           <li>Model Analysis</li>
         </ul>
 
-        <a href="List of Borrowed Books.html">View All Borrowed Books</a>
+        <a href="list-of-borrowed-books.html">View All Borrowed Books</a>
       </section>
     </main>
 
