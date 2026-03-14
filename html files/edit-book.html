@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,8 @@
   <body>
     <header>
       <!-- <img src="images/main logo.png" alt="Online Library Portal logo" /> -->
-      <a href="home.html">Log Out</a>
+       <h1>Online Library Portal</h1>
+      <a href="home.html">Logout</a>
       <nav>
         <ul>
           <li><a href="admin-dashboard.html">My Dashboard</a></li>
@@ -27,42 +28,40 @@
     </header>
 
     <main>
-      <h1>Edit Book</h1>
+      <h2>Book Details</h2>
+      <h3>Clean Code</h3>
+        <img
+          src="images/clean-code-robert-martin.jpg"
+          alt="Clean Code Book Cover"
+          width="270"
+        />
+        <p><strong>Author:</strong> Robert Martin</p>
+        <p><strong>Category:</strong> Programming</p>
+        <p><strong>Status:</strong> Available</p>
+        <p><strong>Description:</strong> Clean Code is a guide to writing readable, maintainable, and efficient
+          software. It explains principles and best practices for writing
+          high-quality code.</p>
+
+      </section>
+
+      <h2>Edit Book</h2>
       <p>Update the details of the selected book below.</p>
 
       <form action="#">
         <div>
           <label for="book_id">Book ID</label>
-          <input
-            type="text"
-            id="book_id"
-            name="book_id"
-            value="1"
-            required
-            readonly
-          />
+          <input type="text" id="book_id" name="book_id" required />
+          <!-- readonly -->
         </div>
 
         <div>
           <label for="book_name">Book Name</label>
-          <input
-            type="text"
-            id="book_name"
-            name="book_name"
-            value="Clean Code"
-            required
-          />
+          <input type="text" id="book_name" name="book_name" required />
         </div>
 
         <div>
           <label for="book_author">Book Author</label>
-          <input
-            type="text"
-            id="book_author"
-            name="book_author"
-            value="Robert Martin"
-            required
-          />
+          <input type="text" id="book_author" name="book_author" required />
         </div>
 
         <div>
@@ -73,8 +72,8 @@
             <option value="Science">Science</option>
             <option value="Technology">Technology</option>
             <option value="History">History</option>
-            <option value="Programming" selected>Programming</option>
-            <option value="Computer Science">Computer Science</option>
+            <option value="Programming">Programming</option>
+            <option value="Computer-Science">Computer Science</option>
             <option value="Fantasy">Fantasy</option>
           </select>
         </div>
@@ -87,7 +86,8 @@
             rows="5"
             cols="15"
             required
-          >A guide to writing clean, readable, and maintainable code by Robert Martin.</textarea>
+          >
+          </textarea>
         </div>
 
         <fieldset>
@@ -111,7 +111,9 @@
           />
         </fieldset>
 
-        <button type="submit" formaction="availableBooks.html">Save Changes</button>
+        <button type="submit" formaction="available-books.html">
+          Save Changes
+        </button>
         <button type="reset">Reset</button>
         <a href="available-books.html">Cancel</a>
       </form>
@@ -129,7 +131,7 @@
 
     <footer class="footer">
       <div class="footer_content">
-         <p id="desc_1">Online Library Portal</p>
+        <p id="desc_1">Online Library Portal</p>
         <div id="desc_2">
           <p>
             Online Library Portal is the world's largest library catalog,
