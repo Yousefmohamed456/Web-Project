@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Available Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/availableBooks.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>Available Books</h1>
+      <p>Browse our curated collection — pick your next read</p>
+    </header>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Programming">Programming</button>
+      <button class="filter-btn" data-filter="Fantasy">Fantasy</button>
+      <button class="filter-btn" data-filter="Computer Science">Computer Science</button>
+      <button class="filter-btn" data-filter="Technology">Technology</button>
+    </div>
+
+    <div class="grid">
+
+      <div class="card" data-category="Programming">
+        <div class="card-id">1</div>
+        <div class="card-icon">💻</div>
+        <div class="card-title">Clean Code</div>
+        <div class="card-author">By <span>Robert Martin</span></div>
+        <span class="card-category cat-programming">⚙ Programming</span>
+        <button class="card-btn"><a href="#">View Book</a>
+        </button>
+      </div>
+
+      <div class="card" data-category="Fantasy">
+        <div class="card-id">2</div>
+        <div class="card-icon">🧙</div>
+        <div class="card-title">Harry Potter</div>
+        <div class="card-author">By <span>J.K. Rowling</span></div>
+        <span class="card-category cat-fantasy">✦ Fantasy</span>
+        <button class="card-btn">
+          <a href="#">View Book</a>
+        </button>
+      </div>
+
+      <div class="card" data-category="Computer Science">
+        <div class="card-id">3</div>
+        <div class="card-icon">🗂️</div>
+        <div class="card-title">Data Structures</div>
+        <div class="card-author">By <span>Mark Aline</span></div>
+        <span class="card-category cat-cs">◈ Computer Science</span>
+        <button class="card-btn">
+          <a href="#">View Book</a>
+        </button>
+      </div>
+
+      <div class="card" data-category="Computer Science">
+        <div class="card-id">4</div>
+        <div class="card-icon">🔢</div>
+        <div class="card-title">Algorithms</div>
+        <div class="card-author">By <span>Parth Thakkar</span></div>
+        <span class="card-category cat-cs">◈ Computer Science</span>
+        <button class="card-btn">
+          <a href="#">View Book</a>
+        </button>
+      </div>
+
+      <div class="card" data-category="Programming">
+        <div class="card-id">5</div>
+        <div class="card-icon">🐍</div>
+        <div class="card-title">Introduction to Python</div>
+        <div class="card-author">By <span>John Doe</span></div>
+        <span class="card-category cat-programming">⚙ Programming</span>
+        <button class="card-btn">
+          <a href="#">View Book </a>
+        </button>
+      </div>
+
+      <div class="card" data-category="Technology">
+        <div class="card-id">6</div>
+        <div class="card-icon">🤖</div>
+        <div class="card-title">Model Analysis</div>
+        <div class="card-author">By <span>John Doe</span></div>
+        <span class="card-category cat-technology">◉ Technology</span>
+        <button class="card-btn">
+          <a href="#">View Book</a>
+        </button>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer_content">
+        <p id="desc_1">Online Library Portal</p>
+        <div id="desc_2">
+          <p>Online Library Portal is the world's largest library catalog, helping you find library materials online.</p>
+          <small>Copyright © 2001-2026 OCLC. All rights reserved.</small>
+          <p>© 2026 OCLC — Domestic and international trademarks and/or service marks of OCLC, Inc. and its affiliates.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/availableBooks.js"></script>
+  </body>
+</html>
