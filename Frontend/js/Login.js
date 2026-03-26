@@ -24,10 +24,6 @@ toggleBtn.addEventListener('click', () => {
 });
 
 
-// ===== CREDENTIALS (غيّرهم زي ما تحب) =====
-const VALID_EMAIL    = 'admin@example.com';
-const VALID_PASSWORD = 'admin123';
-
 // ===== FORM VALIDATION & LOGIN =====
 const form = document.querySelector('form');
 const emailInput = document.getElementById('username');
@@ -36,7 +32,6 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   let valid = true;
 
-  // Clear previous errors
   clearError(emailInput);
   clearError(passwordInput);
 
@@ -63,9 +58,15 @@ form.addEventListener('submit', (e) => {
 
   if (!valid) return;
 
-  // Check credentials
-  if (emailVal === VALID_EMAIL && passVal === VALID_PASSWORD) {
-    window.location.href = 'admin-dashboard.html';
+  const users = JSON.parse(localStorage.getItem('registeredUsers') || '[]');
+  const found = users.find(u => u.email === emailVal && u.password === passVal);
+
+  if (found) {
+    if (found.role === 'admin') {
+      window.location.href = 'admin-dashboard.html';
+    } else {
+      window.location.href = 'user-dashboard.html';
+    }
   } else {
     showError(passwordInput, 'Invalid email or password.');
   }
@@ -102,15 +103,19 @@ passwordInput.addEventListener('input', () => clearError(passwordInput));
 
 // ===== FORGOT PASSWORD =====
 const forgotBtn = document.querySelector('.forgot');
+let answersDisabled = false;
 
 forgotBtn.addEventListener('click', () => {
   const email = emailInput.value.trim();
+
   if (email && isValidEmail(email)) {
     alert(`Password reset link sent to: ${email}`);
     clearError(emailInput);
-  } else {
+    answersDisabled = false;
+  } else if (!answersDisabled) {
     emailInput.focus();
     showError(emailInput, 'Enter your email first to reset your password.');
+    answersDisabled = true;
   }
 });
 
@@ -126,7 +131,7 @@ function handleGoogleResponse(response) {
     picture: payload.picture
   };
   sessionStorage.setItem('googleUser', JSON.stringify(user));
-  window.location.href = 'admin-dashboard.html';
+  window.location.href = 'user-dashboard.html';
 }
 
 window.handleGoogleResponse = handleGoogleResponse;
@@ -158,7 +163,7 @@ document.querySelector('.btn-google').addEventListener('click', (e) => {
 });
 
 
-// ===== REMEMBER ME (persist email) =====
+// ===== REMEMBER ME =====
 const rememberCheckbox = document.querySelector('input[name="remember"]');
 
 window.addEventListener('DOMContentLoaded', () => {
