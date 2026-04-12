@@ -1,0 +1,112 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Available Books</title>
+
+    
+    <link rel="stylesheet" href="list-of-available-books.css">
+    </head>
+
+    <body>
+
+    <header>
+        <h1>Available Books</h1>
+        <a href="sign-up.html" class="logout">Logout</a>
+
+        <nav>
+        <ul>
+            <li><a href="user-dashboard.html">Dashboard</a></li>
+            <li><a href="#">Browse Books</a></li>
+            <li><a href="list-of-borrowed-books.html">Borrowed Books</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+        <h2 style="text-align:center; margin-bottom:20px;">Available Books</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Clean Code</td>
+                <td>Robert Martin</td>
+                <td>Programming</td>
+                <td class="status-available">Available</td>
+                <td><button class="btn select-btn">Select</button></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Harry Potter</td>
+                <td>J.K Rowling</td>
+                <td>Fantasy</td>
+                <td class="status-available">Available</td>
+                <td><button class="btn select-btn">Select</button></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Data Structures</td>
+                <td>Mark Aline</td>
+                <td>CS</td>
+                <td class="status-available">Available</td>
+                <td><button class="btn select-btn">Select</button></td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Algorithms</td>
+            <td>Parth Thakkar</td>
+            <td>CS</td>
+            <td class="status-available">Available</td>
+            <td><button class="btn select-btn">Select</button></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Python</td>
+            <td>John Doe</td>
+            <td>Programming</td>
+            <td class="status-available">Available</td>
+            <td><button class="btn select-btn">Select</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Model Analysis</td>
+            <td>John Doe</td>
+            <td>Technology</td>
+            <td class="status-available">Available</td>
+            <td><button class="btn select-btn">Select</button></td>
+            </tr>
+
+            </tbody>
+        </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Online Library Portal</p>
+        <small>© 2026 OCLC</small>
+    </footer>
+
+    
+    <script src="list-of-available-books.js"></script>
+
+    </body>
+    </html>
