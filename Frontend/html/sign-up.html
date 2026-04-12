@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="../Css/signup.css">
     <title>Sign Up</title>
   </head>
 
@@ -72,24 +72,42 @@
 
         <fieldset>
           <legend>Account Type</legend>
+            <!-- before -->
+            <!-- <label for="user">User (Borrow books)</label>
+            <input
+              type="radio"
+              name="account_type"
+              id="user"
+              value="user"
+              required
+            />
 
+            <label for="admin">Admin (Manage books)</label>
+            <input
+              type="radio"
+              name="account_type"
+              id="admin"
+              value="admin"
+              required
+            /> -->
+            <!-- after -->
+            <input
+  type="radio"
+  name="account_type"
+  id="user"
+  value="user"
+  required
+            />
           <label for="user">User (Borrow books)</label>
-          <input
-            type="radio"
-            name="account_type"
-            id="user"
-            value="user"
-            required
-          />
 
-          <label for="admin">Admin (Manage books)</label>
           <input
-            type="radio"
-            name="account_type"
-            id="admin"
-            value="admin"
-            required
+  type="radio"
+  name="account_type"
+  id="admin"
+  value="admin"
           />
+<label for="admin">Admin (Manage books)</label>
+            
         </fieldset>
 
         <button>Sign Up</button>
@@ -111,7 +129,7 @@
         of OCLC, Inc. and its affiliates.
       </p>
     </footer>
-    <script src="signup.js"></script>
+    <script src="../js/signup.js"></script>
   </body>
 
 </html>
