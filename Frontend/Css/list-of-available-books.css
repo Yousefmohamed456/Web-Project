@@ -1,0 +1,120 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    color: #333;
+    }
+
+    header {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    header h1 {
+    font-size: 26px;
+    }
+
+    nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    }
+
+    nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    }
+
+    nav a:hover {
+    color: #ffd369;
+    }
+
+    .logout {
+    align-self: flex-end;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    }
+
+    main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    }
+
+    .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+
+    thead {
+    background: #2a5298;
+    color: white;
+    }
+
+    th, td {
+    padding: 12px;
+    text-align: center;
+    }
+
+    tbody tr:nth-child(even) {
+    background: #f2f2f2;
+    }
+
+    tbody tr:hover {
+    background: #dbe9ff;
+    }
+
+    .status-available {
+    color: green;
+    font-weight: bold;
+    }
+
+    .status-borrowed {
+    color: red;
+    font-weight: bold;
+    }
+
+    .btn {
+    padding: 6px 12px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    }
+
+    .btn:hover {
+    background: #1e3c72;
+    }
+
+    footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    }
