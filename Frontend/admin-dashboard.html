@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chango&family=Coiny&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/admin-dashboard.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <div class="page-top">
+        <div class="logo-group">
+          <img
+            id="logo_1"
+            src="images/main-logo.png"
+            alt="Online Library Portal logo"
+          />
+          <h1>Online Library Portal</h1>
+        </div>
+        <div class="auth-links">
+          <a href="home.html">Log Out</a>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="admin-dashboard.html">My Dashboard</a></li>
+          <li><a href="add-books.html">Add New Book</a></li>
+          <li><a href="available-books.html">View Available Books</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section_v1">
+        <h2>Admin Dashboard</h2>
+        <p>Welcome, Admin. Manage books and library content from here.</p>
+      </section>
+
+      <section class="section_v2 dashboard-actions">
+        <h2>Quick Actions</h2>
+        <div class="action-cards">
+          <div class="card">
+            <h3>Add New Book</h3>
+            <p>Add books with title, author, and category.</p>
+            <a href="add-books.html">Go</a>
+          </div>
+          <div class="card">
+            <h3>View Books</h3>
+            <p>See all books currently in the system.</p>
+            <a href="available-books.html">Go</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_v1 stats-overview">
+        <h2>Library Overview</h2>
+        <ul class="stats-list">
+          <li><strong>Total Books:</strong> 6</li>
+          <li><strong>Available Books:</strong> 4</li>
+          <li><strong>Borrowed Books:</strong> 2</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_content">
+        <img src="images/main-logo.png" alt="Online Library Portal logo" />
+        <p id="desc_1">Online Library Portal</p>
+        <div id="desc_2">
+          <p>
+            Online Library Portal is the world’s largest library catalog,
+            helping you find library materials online.
+          </p>
+          <small>Copyright © 2001-2026 OCLC. All rights reserved.</small>
+          <p>
+            © 2026 OCLC Domestic and international trademarks and/or service
+            marks of OCLC, Inc. and its affiliates.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+body {
+  font-family: "Averia Sans Libre", sans-serif;
+  margin: 0;
+}
+#logo_1 {
+  height: 55px;
+  width: auto;
+}
+
+.page-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.logo-group {
+  display: flex;
+}
+.auth-links {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+h1 {
+  font-family: Coiny, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: black;
+  height: 40px;
+  margin: 0;
+}
+.nav {
+  width: 100%;
+}
+.nav ul {
+  background-color: #0c4470;
+  height: 65px;
+  margin-bottom: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav ul li {
+  /* display: inline; */
+  margin: 0 10px;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 31px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.section_v1 {
+  background-color: #00548b;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+  height: 540px;
+}
+.section_v1 p {
+  line-height: 1.35;
+  margin: 0;
+}
+
+.section_v2 {
+  background-color: #fafafa;
+  color: #00548b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* vertical centering */
+  align-items: center;
+  gap: 20px; /* controls spacing */
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 260px;
+}
+
+.section_v2 img {
+  display: block;
+}
+.section_v2 a {
+  display: inline-block; /* Makes it behave like a button */
+  background-color: #1074c3;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 17px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove the underline */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+.section_v2 p {
+  color: #798ea4;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+.books-container h2 {
+  margin-top: -60px;
+}
+.books-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.books-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.books-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+#books {
+  color: #2b3545;
+  font-size: 20px;
+  font-weight: 700;
+}
+#img_1 {
+  width: 100px;
+  height: auto;
+}
+.footer {
+  background-color: #0f3d6b;
+  color: white;
+  line-height: 1.4;
+  height: 270px;
+}
+
+.footer_content {
+  margin-left: 47px;
+}
+
+.footer_content img {
+  width: 100px;
+  height: auto;
+  position: relative;
+  top: 20px;
+}
+#desc_1 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 37px;
+  position: relative;
+  top: -20px;
+}
+
+#desc_2 {
+  position: relative;
+  top: -48px;
+}
+
+/* -How to center the nave vertically withing the background color?DONE also I have proplem centering the text and headers
+ within sections vertically DONE
+- how to get the logo down vertically without puching the header and sign up/login with it?DONE
+-why the background color does not go completely to the edge of the screen? DONE
+-I am trying to set a samller margin-top between the first section and the nav but it does not reflect why is this? 
+Basically I am trying to make the white space between nav items and section onesmaller.
+-How the 400 million books pargrapgh got on the same line as the book picture when both are block-level elements?
+-How to vertically move #books id down a little bit? It is not being affected by postion relative for some reason.
+ */
